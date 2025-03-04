@@ -1,0 +1,145 @@
+// Global Styling for Sections
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #E6E6FA;
+  }
+  
+  // Titles
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  // Common Table Styling
+  table {
+    width: 80%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    table-layout: fixed; /* Ensures equal column widths */
+  }
+  
+  // Table Headers
+  th {
+    background: #00B4D8;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  // Table Data
+  td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    white-space: normal; /* Allows text wrapping */
+    word-break: break-word;
+  }
+  
+  // Hover Effects
+  tr:hover {
+    background: #f1f1f1;
+    transition: 0.3s ease-in-out;
+  }
+  
+  // Column Widths to Avoid Overflow
+  th:nth-child(1), td:nth-child(1) { width: 40%; } /* First column */
+  th:nth-child(2), td:nth-child(2) { width: 15%; } /* Second column */
+  th:nth-child(3), td:nth-child(3) { width: 30%; } /* Third column */
+  th:nth-child(4), td:nth-child(4) { width: 15%; } /* Fourth column */
+  
+  // Projects Table
+  .projects-table {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+
+  .projects-table th, 
+  .projects-table td {
+      padding: 12px;
+      text-align: left;
+  }
+  
+  .projects-table th:first-child, 
+  .projects-table td:first-child {
+      width: 30%; /* Adjusts Project Name column */
+  }
+  
+  .projects-table th:last-child, 
+  .projects-table td:last-child {
+      width: 70%; /* Gives more space to Description */
+  }
+
+
+
+  // Publications Table
+  .publications-table {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  // Clickable Link Button
+  td a {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  td a:hover {
+    background: #0056b3;
+  }
+  
+
+/* Button Styling */
+.clickme-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+}
+
+  // 🔹 Responsive Design for Small Screens
+  @media (max-width: 768px) {
+    table {
+      width: 90%;
+    }
+  
+    th, td {
+      font-size: 14px; /* Adjust font size */
+    }
+  }
+  

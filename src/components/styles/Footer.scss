@@ -1,0 +1,75 @@
+/* Footer Styling */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #00B4D8; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Copyright Text */
+  .text p {
+    margin: 0;
+    font-weight: bold;
+    color: rgb(24, 20, 20);
+    margin-left: 100px;
+  }
+  
+  /* Scroll to Top Icon */
+  footer a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 10px;
+  }
+  
+  /* Hover Effect */
+  footer a:hover {
+    transform: scale(1.2);
+    color: #f1f1f1;
+  }
+
+  .scroll-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 70px;
+
+    &:hover {
+      background: #0056b3;
+    }
+    .arrow-icon {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      padding: 1rem 0;
+    }
+  
+    footer a {
+      margin-top: 5px;
+    }
+  }
+  

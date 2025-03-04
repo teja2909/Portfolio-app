@@ -1,0 +1,224 @@
+.text div p {
+    text-align: left; // Align text to the left
+    width: 100%; // Ensure it spans the full width of its container
+    margin-left: 0; // Reset any unintended margins
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #E6E6FA;
+}
+
+.main__container {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 0 5%;
+    gap: 10%;
+    flex-wrap: nowrap;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, rgba(216, 46, 8, 0.085), rgba(62, 7, 189, 0.126));
+        clip-path: polygon(100% 33%, 0% 100%, 100% 100%);
+        left: 0;
+    }
+}
+
+.main__content {
+    flex: 1;
+    text-align: left;
+}
+
+.text {
+    max-width: 600px;
+    line-height: 1.5;
+
+    p {
+        color: #666;
+        text-transform: capitalize;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #222;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #444;
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+
+    a {
+        text-decoration: none;
+    }
+
+    .icon {
+        font-size: 40px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    // Social Icon Colors
+    a:nth-child(1) .icon { color: #D44638; } // Gmail Red
+    a:nth-child(1):hover .icon { color: #FF5722; }
+
+    a:nth-child(2) .icon { color: #0077B5; } // LinkedIn Blue
+    a:nth-child(2):hover .icon { color: #005A8E; }
+
+    a:nth-child(3) .icon { color: #181717; } // GitHub Black
+    a:nth-child(3):hover .icon { color: #24292E; }
+}
+
+.main__img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin-right: 5rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, #ff6b6b, #ffcc5c, #4ecdc4, #556270);
+        background-size: 300% 300%;
+        animation: glowing 3s infinite linear;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        transition: transform 0.5s ease-in-out;
+        position: relative;
+        z-index: 20;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+}
+
+/* Glowing Animation */
+@keyframes glowing {
+    0% { transform: rotate(0deg); filter: brightness(1); }
+    50% { transform: rotate(180deg); filter: brightness(1.5); }
+    100% { transform: rotate(360deg); filter: brightness(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .text {
+        line-height: 30px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .main__container {
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .main__img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .text {
+        h1 {
+            font-size: 23px;
+        }
+
+        p {
+            font-size: 11px;
+            color: #000;
+        }
+    }
+
+    .icons {
+        margin-left: 2rem;
+    }
+}
+
+
+.role {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .role h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff4d4d;
+    display: inline-block;
+    border-right: 3px solid #ff4d4d; /* Blinking cursor */
+    padding-right: 5px;
+    animation: smoothTyping 3s steps(10, end) infinite, cursorBlink 0.7s infinite;
+  }
+  
+  @keyframes smoothTyping {
+    0% {
+      width: 0ch; /* Start with no characters */
+    }
+    100% {
+      width: 18ch; /* Ensure it matches the text length */
+    }
+  }
+  
+  @keyframes cursorBlink {
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: #ff4d4d;
+    }
+  }
+  
+  
+  
+  

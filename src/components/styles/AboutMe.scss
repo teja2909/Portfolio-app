@@ -1,0 +1,97 @@
+.about {
+    padding: 4rem 2rem;
+    background: #E6E6FA; /* Lavender background */
+    text-align: center;
+}
+
+/* Title Styling */
+.about .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.about .title span {
+    color: #00B4D8;
+}
+
+/* Heading */
+.about h3 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #444;
+}
+
+/* Education Table */
+.education-table {
+    width: 90%;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    table-layout: fixed;  /* Fixes column spacing issues */
+}
+
+/* Table Headers & Cells */
+.education-table th, .education-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Header Background */
+.education-table th {
+    background: #00B4D8;
+    color: white;
+    font-weight: bold;
+}
+
+/* Row Hover Effect */
+.education-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Fix Column Widths */
+.education-table th:nth-child(1), .education-table td:nth-child(1) { width: 35%; }
+.education-table th:nth-child(2), .education-table td:nth-child(2) { width: 25%; }
+.education-table th:nth-child(3), .education-table td:nth-child(3) { width: 20%; }
+.education-table th:nth-child(4), .education-table td:nth-child(4) { width: 20%; }
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Skill Item Styling */
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #00B4D8;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.skill-item:hover {
+    transform: translateY(-3px);
+    background: #0056b3;
+}
+
+/* Skill Icon */
+.skill-item svg {
+    font-size: 1.5rem;
+}
