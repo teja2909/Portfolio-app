@@ -184,41 +184,69 @@
     }
 }
 
-
+  
 .role {
+    position: relative;
     display: inline-block;
     overflow: hidden;
-    white-space: nowrap;
   }
   
   .role h2 {
     font-size: 32px;
     font-weight: bold;
+    color: transparent;
+    position: relative;
+    -webkit-text-stroke: 1px #ff4d4d;
+    text-stroke: 1px #ff4d4d;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  
+  /* Filled text revealed by moving stick */
+  .role h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
     color: #ff4d4d;
-    display: inline-block;
-    border-right: 3px solid #ff4d4d; /* Blinking cursor */
-    padding-right: 5px;
-    animation: smoothTyping 3s steps(10, end) infinite, cursorBlink 0.7s infinite;
+    overflow: hidden;
+  
+    /* Create the scanning stick mask */
+    mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      black 30%,
+      black 70%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      black 30%,
+      black 70%,
+      transparent 100%
+    );
+    mask-size: 200% 100%;
+    -webkit-mask-size: 200% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    animation: revealStick 3s linear infinite;
+    z-index: 2;
   }
   
-  @keyframes smoothTyping {
+  /* Stick moves left to right revealing the filled text */
+  @keyframes revealStick {
     0% {
-      width: 0ch; /* Start with no characters */
+      mask-position: -100% 0;
+      -webkit-mask-position: -100% 0;
     }
     100% {
-      width: 18ch; /* Ensure it matches the text length */
+      mask-position: 100% 0;
+      -webkit-mask-position: 100% 0;
     }
   }
   
-  @keyframes cursorBlink {
-    50% {
-      border-color: transparent;
-    }
-    100% {
-      border-color: #ff4d4d;
-    }
-  }
-  
-  
-  
-  
+
+

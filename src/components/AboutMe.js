@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles/AboutMe.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDatabase, faBrain, faChartLine, faChartBar, faChartPie, faRobot } from '@fortawesome/free-solid-svg-icons';
-import { faPython, faJava, faReact, faHtml5, faCss3, faBootstrap, faNodeJs, faJs, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faBrain, faCube, faChartLine, faChartBar, faChartPie, faRobot } from '@fortawesome/free-solid-svg-icons';
+import { faPython, faHtml5, faCss3, faBootstrap, faJs, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 const AboutMe = () => {
@@ -26,17 +26,17 @@ const AboutMe = () => {
                         <td>CVR College Of Engineering</td>
                         <td id='#btech'>B.Tech, <br/>CSE(AI & ML)</td>
                         <td>2022 - 2026</td>
-                        <td>CGPA: 8.65/10.0</td>
+                        <td>CGPA: 8.58/10.0</td>
                     </tr>
                     <tr>
                         <td>Gouthami Junior College, Telangana</td>
                         <td>Class XII - PCM</td>
                         <td>2020 - 2022</td>
-                        <td>Percentage: 97.3%</td>
+                        <td>Percentage: 97.3</td>
                     </tr>
                     <tr>
                         <td>Narayana High School, Telangana</td>
-                        <td>Class X - PCM</td>
+                        <td>Class X - SSC</td>
                         <td>Until 2020</td>
                         <td>GPA: 10.0/10.0</td>
                     </tr>
@@ -47,17 +47,14 @@ const AboutMe = () => {
             <h3>Skills</h3>
             <div className="skills-container">
             <div className="skill-item"><FontAwesomeIcon icon={faPython} /> Python</div>
-            <div className="skill-item"><FontAwesomeIcon icon={faJava} /> Java</div>
-            <div className="skill-item"><FontAwesomeIcon icon={faDatabase} /> Oracle SQL</div>
-            <div className="skill-item"><FontAwesomeIcon icon={faDatabase} /> MongoDB</div>
+            <div className="skill-item"><FontAwesomeIcon icon={faJs} /> JavaScript</div>
+            <div className="skill-item"><FontAwesomeIcon icon={faDatabase} /> My SQL</div>
             <div className="skill-item"><FontAwesomeIcon icon={faHtml5} /> HTML</div>
             <div className="skill-item"><FontAwesomeIcon icon={faCss3} /> CSS</div>
             <div className="skill-item"><FontAwesomeIcon icon={faBootstrap} /> Bootstrap</div>
-            <div className="skill-item"><FontAwesomeIcon icon={faReact} /> React.js</div>
-            <div className="skill-item"><FontAwesomeIcon icon={faNodeJs} /> Node.js</div>
-            <div className="skill-item"><FontAwesomeIcon icon={faJs} /> Express.js</div>
             <div className="skill-item"><FontAwesomeIcon icon={faBrain} /> Pandas</div>
-            <div className="skill-item"><FontAwesomeIcon icon={faChartLine} /> Numpy</div>
+            <div className="skill-item"><FontAwesomeIcon icon={faCube} /> Numpy</div>
+            <div className="skill-item"><FontAwesomeIcon icon={faChartLine} /> Plotly</div>
             <div className="skill-item"><FontAwesomeIcon icon={faChartBar} /> Matplotlib</div>
             <div className="skill-item"><FontAwesomeIcon icon={faChartPie} /> Seaborn</div>
             <div className="skill-item"><FontAwesomeIcon icon={faRobot} /> Scikit-learn</div>

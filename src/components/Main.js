@@ -10,11 +10,12 @@ const Main =() => {
                 <div className="main__content">
                     <div className="text">
                         <h1> I'm Vorsu Teja Vigneshwar </h1>
-                        <div className="role">
-                            <h2>Software Developer</h2>
+
+                        <div class="role">
+                            <h2 data-text="Software Engineer">Software Engineer</h2>
                         </div>
                         <div className="content">
-                            <p>Currently pursuing B.Tech in Computer Science(Artificial Intelligence & Machine Learning) from CVR College Of Engineering. Passionate about Machine Learning, Web Development, and solving real-world problems with innovative solutions.</p><br/>  
+                            <p>Currently pursuing B.Tech in Computer Science(Artificial Intelligence & Machine Learning) from CVR College Of Engineering. Passionate about Machine Learning, Web Development and solving real-world problems with innovative solutions.</p><br/>  
                         </div>
                         
                         {/* Social Icons with Links */}

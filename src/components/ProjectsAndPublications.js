@@ -43,12 +43,24 @@ const ProjectsAndPublications = () => {
           </thead>
           <tbody>
             <tr>
-              <td>Car Quest - Input Feature-Based Car Recommendation System</td>
-              <td>The “Car Quest” project aims to develop a comprehensive car recommendation system that assists users in finding suitable vehicles based on their preferences and requirements.</td>
+              <td>Olympics Data Analysis</td>
+              <td>• Performed a comprehensive Data Analysis on Olympic datasets, uncovering trends in athlete performance,
+                country-wise medal distributions and event statistics.</td>
             </tr>
             <tr>
-              <td>AI Driven Traffic Management System</td>
-              <td>AI-driven traffic management system integrating computer vision and machine learning to enhance traffic efficiency and safety.</td>
+              <td>Personal Portfolio Website</td>
+              <td>• Designed and built a fully responsive Portfolio website using HTML, CSS, and JavaScript to showcase my
+              skills, publications and projects.</td>
+            </tr>
+            <tr>
+              <td>Personalized Travel Itinerary Planner (GenAI Powered)</td>
+              <td>• Built an AI-powered travel assistant that generates custom travel plans using Generative AI based on user
+              inputs.</td>
+            </tr>
+            <tr>
+              <td>AI-Driven Traffic Management System</td>
+              <td>•  Developed an AI-powered traffic monitoring system using computer vision and deep learning to optimize
+              urban traffic flow.</td>
             </tr>
           </tbody>
         </table>
